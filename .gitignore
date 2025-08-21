@@ -65,3 +65,6 @@ ehthumbs.db
 # Coverage / test
 coverage/
 .nyc_output/
+
+# Ignore JSON files in backend
+backend/*.json
