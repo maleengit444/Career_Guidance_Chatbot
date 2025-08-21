@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 <<<<<<< HEAD
+<<<<<<< HEAD
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -139,6 +140,8 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 =======
+=======
+>>>>>>> 89b2f21 (WIP: save changes before history rewrite)
 pnpm-debug.log*
 lerna-debug.log*
 
@@ -177,4 +180,6 @@ appsettings.json
 config.json
 credentials.json
 firebase.json
->>>>>>> 6c8f242 (Initial commit with secure .gitignore)
+ HEAD
+ 6c8f242 (Initial commit with secure .gitignore)
+ 89b2f21 (WIP: save changes before history rewrite)
