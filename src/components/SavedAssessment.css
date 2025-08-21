@@ -1,0 +1,61 @@
+.saved-assessment-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .saved-assessment-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  .saved-assessment-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .score-section,
+  .recommendation-section {
+    margin-top: 2rem;
+  }
+  
+  .score-section h3,
+  .recommendation-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+  }
+  
+  .score-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .score-section li {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+  }
+  
+  .recommendation-paragraph {
+    margin: 1rem 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+  }
+  
+  .recommendation-paragraph strong {
+    color: #2c3e50;
+  }
+  

@@ -1,0 +1,63 @@
+.sidebar {
+    width: 250px;
+    background: #111;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar h2,
+  .sidebar h3 {
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  
+  .sidebar button {
+    margin: 0.3rem 0;
+    padding: 0.6rem;
+    background: #222;
+    border: none;
+    color: #ccc;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .sidebar button.active,
+  .sidebar button:hover {
+    background: #1e88e5;
+    color: #fff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .sidebar li {
+    margin: 0.5rem 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .session-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .session-title {
+    font-size: 0.95rem;
+    color: #eee;
+  }
+  
+  .session-time {
+    font-size: 0.75rem;
+    color: #888;
+  }
+  
