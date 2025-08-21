@@ -4,8 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-<<<<<<< HEAD
+pnpm-debug.log*
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -23,28 +22,29 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+.nyc_output/
 
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage
 .grunt
 
-# Bower dependency directory (https://bower.io/)
+# Bower dependency directory
 bower_components
 
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons
 build/Release
 
 # Dependency directories
 node_modules/
 jspm_packages/
-
-# Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
+
+# Snowpack / Vite / dist
+dist
+dist-ssr
+*.local
 
 # TypeScript cache
 *.tsbuildinfo
@@ -52,10 +52,8 @@ web_modules/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
+# Optional eslint/stylelint cache
 .eslintcache
-
-# Optional stylelint cache
 .stylelintcache
 
 # Optional REPL history
@@ -64,67 +62,46 @@ web_modules/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
+# Yarn Integrity
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv files
 .env
 .env.*
 !.env.example
+.env.local
+.env.production
+.env.development
+.env.test
+*.env
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache
 .cache
 .parcel-cache
 
-# Next.js build output
+# Framework outputs
 .next
 out
-
-# Nuxt.js build / generate output
 .nuxt
-dist
-
-# Gatsby files
-.cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
-
-# vuepress build output
 .vuepress/dist
-
-# vuepress v2.x temp and cache directory
 .temp
-.cache
-
-# Sveltekit cache directory
 .svelte-kit/
-
-# vitepress build output
 **/.vitepress/dist
-
-# vitepress cache directory
 **/.vitepress/cache
-
-# Docusaurus cache and generated files
 .docusaurus
 
-# Serverless directories
+# Serverless / Firebase
 .serverless/
+.dynamodb/
+.firebase/
 
 # FuseBox cache
 .fusebox/
 
-# DynamoDB Local files
-.dynamodb/
-
-# Firebase cache directory
-.firebase/
-
 # TernJS port file
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
+# Stores VSCode versions
 .vscode-test
 
 # yarn v3
@@ -136,21 +113,11 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
-# Vite logs files
+# Vite logs
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-=======
-=======
->>>>>>> 89b2f21 (WIP: save changes before history rewrite)
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editor / OS
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -160,26 +127,28 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+Thumbs.db
+ehthumbs.db
 
-# Environment variables and sensitive data
-.env
-.env.local
-.env.production
-.env.development
-.env.test
-*.env
-
-# API keys and credentials
+# API keys and sensitive data
 secrets/
 config/keys.json
 *.key
 *.pem
-
-# Additional security exclusions
 appsettings.json
 config.json
 credentials.json
 firebase.json
- HEAD
- 6c8f242 (Initial commit with secure .gitignore)
- 89b2f21 (WIP: save changes before history rewrite)
+
+# Google Cloud / Gemini keys
+*.json
+!package.json
+!tsconfig.json
+
+# OpenAI / Gemini API keys
+openai_api_key.txt
+gemini_api_key.txt
+
+# Debug / temp
+*.tmp
+*.bak
