@@ -42,3 +42,26 @@ appsettings.json
 config.json
 credentials.json
 firebase.json
+# Google Cloud / Gemini keys
+*.json
+!package.json   # keep package.json tracked
+!tsconfig.json  # if you use TypeScript configs
+
+# OpenAI / OpenRouter / Gemini configs
+openai_api_key.txt
+gemini_api_key.txt
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+
+# Debug / temp
+*.pid
+*.seed
+*.pid.lock
+*.tmp
+*.bak
+
+# Coverage / test
+coverage/
+.nyc_output/
