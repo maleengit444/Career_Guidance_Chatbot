@@ -152,3 +152,6 @@ gemini_api_key.txt
 # Debug / temp
 *.tmp
 *.bak
+
+# Ignore JSON files in backend
+backend/*.json
